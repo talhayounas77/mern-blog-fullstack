@@ -1,17 +1,19 @@
-import { BrowserRouter,Route,Router, Routes } from "react-router-dom" 
-import About from "./pages/About"
-import Home from "./pages/Home"
-import Signin from "./pages/signin"
-import Signup from "./pages/signup"
-import Dashboard from "./pages/Dashboard"
-import Projects from "./pages/Projects"
-import Header from "./components/Header"
+// import { BrowserRouter,Route,Router, Routes } from "react-router-dom" 
+// import About from "./pages/About"
+// import Home from "./pages/Home"
+// import Signin from "./pages/signin"
+// import Signup from "./pages/signup"
+// import Dashboard from "./pages/Dashboard"
+// import Projects from "./pages/Projects"
+// import Header from "./components/Header"
+import Particals from "./components/Particals"
 
 
 export default function App() {
   return (
     <>
-  <BrowserRouter>
+    <Particals/>
+  {/* <BrowserRouter>
     <Header/>
   <Routes>|
     <Route path="/" element={<Home />} />
@@ -23,7 +25,7 @@ export default function App() {
   
   </Routes>
   
-  </BrowserRouter>
+  </BrowserRouter> */}
     </>
   )
 }

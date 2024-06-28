@@ -26,3 +26,14 @@ app.listen(port, () => {
 
 app.use("/api/user",userroutes)
 app.use("/api/auth",authroutes)
+
+
+app.use((err,req,res,next)=>{
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Something went wrong";
+  res.status(statusCode).json({
+    success:false,
+    statusCode,
+    message:message,
+  })
+})
